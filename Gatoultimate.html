@@ -1,0 +1,34 @@
+<link rel="stylesheet" type="text/css" href="estilogato.css">
+
+<link rel="shortcut icon" href="favicon.ico" />
+
+<center>
+
+    <div class="relative">
+        <!-- En esta parte del codigo es para poder centrar el texto de los mensajes que aparecen al usuario, de las opciones que tiene-->
+        <canvas id="myCanvas" width="600" height="600"> 
+           
+        </canvas>
+
+        <div class="absolute" id="startMenu">
+            <p class="centeredbig">Examen Final</p>
+            <p class="centered">Marvin Huitz Cuc</p>
+            <p class="centered" onclick="pickTurns()"><button>Jugar en solitario</button></p>
+            <p class="centered" onclick="startGame(1)"><button>Jugar en pareja</button></p>
+        </div>
+        <div class="absolute" id="turnMenu" hidden="hidden">
+            <p class="centeredbig">Iniciar partida</p>
+            <p class="centered" onclick="setGame(0)"><button>A Jugar</button></p>
+  
+        </div>
+        <div class="absolute" id="winMenu" hidden="hidden">
+            <p class="centeredbig" id="result">Has ganado!</p>
+            <p class="centered" onclick="menu()"><button>Volver a Jugar</button></p>
+        </div>
+        <div class="absolute fade" id="loader" hidden>
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        </div>
+    </div>
+</center>
+
+<script src="codigogato.js"></script>
